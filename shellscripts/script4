@@ -1,0 +1,12 @@
+#! /bin/bash
+
+k=`echo $1|sed 's/\/$//'`
+
+for i in $k/*
+do
+if [ -f "$i" ]
+then
+j=`ls -l "$i"|cut -c 1-10`
+echo -e "$j\t$i"
+fi
+done 

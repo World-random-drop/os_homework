@@ -1,0 +1,13 @@
+#!/bin/sh
+if [ $# -gt $MAXFILES ];
+then
+read -p "Are you sure ?  " yn
+case $yn in
+[Yy]* ) echo "all files will be deleted";;
+[Nn]* ) exit;;
+esac
+fi
+for fn in $@
+     do
+       rm $fn
+     done

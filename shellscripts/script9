@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in `seq 1 $#`
+do
+let j=$#-i+1
+eval echo \$$j
+done

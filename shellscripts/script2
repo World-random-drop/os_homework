@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ "$1" = "y" ];then
+exit 0
+elif [ "$1" = "yes" ];then
+exit 0
+elif [ "$1" = "Yes" ];then
+exit 0
+elif [ "$1" = "YES" ];then
+exit 0
+else
+exit 1
+fi
